@@ -7,7 +7,7 @@ function cariPrimaDariRentang(m, n) {
     bilangan[1] = false;
   
     // mencari bilangan prima dengan algoritma sieve of eratosthenes
-    for (let i = 2; i <= Math.sqrt(n); i++) {
+    for (let i = 2; i <n; i++) {
       if (bilangan[i]) {
         for (let j = i * i; j <= n; j += i) {
           bilangan[j] = false;
